@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - RetroDownloads 2010</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🎮 RetroDownloads 2010</h1>
+                <p class="tagline">O melhor portal de downloads da web!</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="games.html">JOGOS</a></li>
+                    <li><a href="revistas.html">REVISTAS</a></li>
+                    <li><a href="softwares.html">SOFTWARES</a></li>
+                    <li><a href="contato.html" style="background-color: #ffcc00; color: #0066cc;">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>📧 ENTRE EM CONTATO 📧</h2>
+            <p>Tire suas dúvidas e sugestões!</p>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO -->
+    <main class="container">
+        <section class="section">
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="card" style="border-color: #ffcc00; border-width: 4px;">
+                    <h2 style="color: #0066cc; text-align: center; margin-bottom: 25px;">Formulário de Contato</h2>
+                    <form onsubmit="enviarContato(event)">
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: block; color: #0066cc; font-weight: bold; margin-bottom: 5px;">Nome:</label>
+                            <input type="text" required style="width: 100%; padding: 10px; border: 2px solid #0066cc; border-radius: 4px; font-size: 1em;">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: block; color: #0066cc; font-weight: bold; margin-bottom: 5px;">E-mail:</label>
+                            <input type="email" required style="width: 100%; padding: 10px; border: 2px solid #0066cc; border-radius: 4px; font-size: 1em;">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: block; color: #0066cc; font-weight: bold; margin-bottom: 5px;">Assunto:</label>
+                            <input type="text" required style="width: 100%; padding: 10px; border: 2px solid #0066cc; border-radius: 4px; font-size: 1em;">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: block; color: #0066cc; font-weight: bold; margin-bottom: 5px;">Mensagem:</label>
+                            <textarea required style="width: 100%; padding: 10px; border: 2px solid #0066cc; border-radius: 4px; font-size: 1em; min-height: 120px;"></textarea>
+                        </div>
+                        <button type="submit" class="btn-download" style="margin-top: 10px;">ENVIAR MENSAGEM</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">❓ PERGUNTAS FREQUENTES</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>🔗 Qual é o tamanho máximo de download?</h3>
+                    <p class="description">Nossos downloads têm limite de até 1GB por arquivo. Use um gerenciador de downloads para arquivos maiores!</p>
+                </div>
+                <div class="card">
+                    <h3>⚠️ Os arquivos são seguros?</h3>
+                    <p class="description">Todos os nossos arquivos são verificados com antivírus antes de publicar. 100% seguro!</p>
+                </div>
+                <div class="card">
+                    <h3>💪 Preciso criar conta?</h3>
+                    <p class="description">Não! Downloads são totalmente anônimos e sem necessidade de cadastro. Rápido e fácil!</p>
+                </div>
+                <div class="card">
+                    <h3>🌐 Há limite de velocidade?</h3>
+                    <p class="description">Velocidade máxima de download é sua conexão de internet. Sem throttling!</p>
+                </div>
+                <div class="card">
+                    <h3>📱 Funciona em mobile?</h3>
+                    <p class="description">Sim! Nosso site é totalmente responsivo e funciona em celulares e tablets.</p>
+                </div>
+                <div class="card">
+                    <h3>❓ Como reportar download quebrado?</h3>
+                    <p class="description">Use nosso formulário acima! Corrigiremos em até 24 horas. Valeu pelo aviso!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">📍 INFORMAÇÕES DE CONTATO</h2>
+            <div style="background: #f0f0f0; padding: 30px; border: 3px solid #0066cc; border-radius: 8px; text-align: center;">
+                <p style="color: #0066cc; font-weight: bold; font-size: 1.1em; margin-bottom: 10px;">📧 E-mail: suporte@retrodownloads2010.com</p>
+                <p style="color: #0066cc; font-weight: bold; font-size: 1.1em; margin-bottom: 10px;">📞 Telefone: (11) 3000-1992</p>
+                <p style="color: #0066cc; font-weight: bold; font-size: 1.1em;">🌐 ICQ: 123456789</p>
+                <p style="color: #666; margin-top: 15px; font-size: 0.9em;">Atendimento de segunda a sexta: 09h às 18h</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2010 RetroDownloads. Todos os direitos reservados.</p>
+            <p>⭐ Visitantes: <span class="counter">12.847.392</span></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
