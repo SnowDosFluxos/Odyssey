@@ -1,39 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Odyssey</title>
-
-  <style>
-    body{
-      background:black;
-      color:white;
-      font-family:Arial;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-      margin:0;
-      overflow:hidden;
-    }
-
-    h1{
-      font-size:5rem;
-      text-shadow:0 0 20px purple;
-      animation:flicker 2s infinite;
-    }
-
-    @keyframes flicker{
-      0%{opacity:1;}
-      50%{opacity:0.6;}
-      100%{opacity:1;}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroDownloads 2010 - Seu Portal de Downloads</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🎮 RetroDownloads 2010</h1>
+                <p class="tagline">O melhor portal de downloads da web!</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="games.html">JOGOS</a></li>
+                    <li><a href="revistas.html">REVISTAS</a></li>
+                    <li><a href="softwares.html">SOFTWARES</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<h1>ODYSSEY</h1>
+    <!-- BANNER PRINCIPAL -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>⚡ BEM-VINDO AO MELHOR SITE DE DOWNLOADS ⚡</h2>
+            <p>Aqui você encontra os melhores jogos, revistas de detonados e softwares!</p>
+            <input type="text" class="search-bar" placeholder="Buscar downloads...">
+        </div>
+    </section>
 
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
+        <!-- SEÇÃO DESTAQUES -->
+        <section class="section">
+            <h2 class="section-title">🌟 DESTAQUES</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-header">NOVO!</div>
+                    <h3>The Legend of Zelda</h3>
+                    <p class="category">Ação/Aventura</p>
+                    <p class="description">Clássico dos clássicos em versão completa</p>
+                    <button class="btn-download" onclick="baixar('Zelda')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <div class="card-header">BEST</div>
+                    <h3>Super Mario Bros</h3>
+                    <p class="category">Plataforma</p>
+                    <p class="description">O jogo mais baixado do portal</p>
+                    <button class="btn-download" onclick="baixar('Mario')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <div class="card-header">RECOMENDADO</div>
+                    <h3>Street Fighter IV</h3>
+                    <p class="category">Luta</p>
+                    <p class="description">Lutador premiado e completo</p>
+                    <button class="btn-download" onclick="baixar('SF4')">BAIXAR</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO JOGOS -->
+        <section class="section">
+            <h2 class="section-title">🎮 ÚLTIMOS JOGOS</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Pac-Man</h3>
+                    <p class="category">Arcade</p>
+                    <p class="description">22 MB | Completo</p>
+                    <button class="btn-download" onclick="baixar('Pac-Man')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <h3>Sonic Adventure</h3>
+                    <p class="category">Plataforma</p>
+                    <p class="description">150 MB | Full Version</p>
+                    <button class="btn-download" onclick="baixar('Sonic')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <h3>Crash Bandicoot</h3>
+                    <p class="category">Plataforma</p>
+                    <p class="description">320 MB | Completo</p>
+                    <button class="btn-download" onclick="baixar('Crash')">BAIXAR</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO REVISTAS -->
+        <section class="section">
+            <h2 class="section-title">📚 REVISTAS DE DETONADOS</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Revista SuperGamePower #145</h3>
+                    <p class="category">Detonado Completo</p>
+                    <p class="description">48 MB | Edição Especial</p>
+                    <button class="btn-download" onclick="baixar('SGP145')">BAIXAR PDF</button>
+                </div>
+                <div class="card">
+                    <h3>Nintendo Gamer #76</h3>
+                    <p class="category">Guia Oficial</p>
+                    <p class="description">35 MB | Impecável</p>
+                    <button class="btn-download" onclick="baixar('NG76')">BAIXAR PDF</button>
+                </div>
+                <div class="card">
+                    <h3>PlayStation Magazine #89</h3>
+                    <p class="category">Dicas e Truques</p>
+                    <p class="description">52 MB | Completo</p>
+                    <button class="btn-download" onclick="baixar('PSM89')">BAIXAR PDF</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOFTWARES -->
+        <section class="section">
+            <h2 class="section-title">💻 SOFTWARES ÚTEIS</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>WinRAR 3.90</h3>
+                    <p class="category">Compactador</p>
+                    <p class="description">2.5 MB | Licenciado</p>
+                    <button class="btn-download" onclick="baixar('WinRAR')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <h3>Adobe Flash Player</h3>
+                    <p class="category">Reprodutor</p>
+                    <p class="description">15 MB | Atualizado</p>
+                    <button class="btn-download" onclick="baixar('Flash')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <h3>Nero Burning</h3>
+                    <p class="category">Gravador CD/DVD</p>
+                    <p class="description">85 MB | Completo</p>
+                    <button class="btn-download" onclick="baixar('Nero')">BAIXAR</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO ANÚNCIOS -->
+        <section class="section">
+            <h2 class="section-title">📢 PUBLICIDADE</h2>
+            <div class="ads-container">
+                <div class="ad-box">💰 CLIQUE AQUI E GANHE PRÊMIOS! 💰</div>
+                <div class="ad-box">🎁 GANHE DINHEIRO EM CASA! 🎁</div>
+                <div class="ad-box">🌐 HOSPEDAGEM WEB BARATA! 🌐</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2010 RetroDownloads. Todos os direitos reservados.</p>
+            <p>⭐ Visitantes: <span class="counter" id="visitantes">12.847.392</span></p>
+            <p style="font-size: 0.8em; margin-top: 10px;">Site criado com ❤️ nos anos 2010</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
