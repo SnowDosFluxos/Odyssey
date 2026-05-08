@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softwares - RetroDownloads 2010</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🎮 RetroDownloads 2010</h1>
+                <p class="tagline">O melhor portal de downloads da web!</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="games.html">JOGOS</a></li>
+                    <li><a href="revistas.html">REVISTAS</a></li>
+                    <li><a href="softwares.html" style="background-color: #ffcc00; color: #0066cc;">SOFTWARES</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>💻 SOFTWARES E UTILITÁRIOS 💻</h2>
+            <p>Tudo que você precisa para seu PC!</p>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO -->
+    <main class="container">
+        <section class="section">
+            <h2 class="section-title">📦 COMPACTADORES</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>WinRAR 3.90</h3>
+                    <p class="category">Compactador RAR/ZIP</p>
+                    <p class="description">2.5 MB | Versão completa</p>
+                    <button class="btn-download" onclick="baixar('WinRAR390')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <h3>7-Zip 9.0</h3>
+                    <p class="category">Compactador Livre</p>
+                    <p class="description">1.2 MB | Open Source</p>
+                    <button class="btn-download" onclick="baixar('7Zip')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <h3>WinZip 15</h3>
+                    <p class="category">Compactador Profissional</p>
+                    <p class="description">5.8 MB | Pro Version</p>
+                    <button class="btn-download" onclick="baixar('WinZip')">BAIXAR</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🎬 MÍDIA E REPRODUÇÃO</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Adobe Flash Player</h3>
+                    <p class="category">Reprodutor Flash</p>
+                    <p class="description">15 MB | Versão 10.0</p>
+                    <button class="btn-download" onclick="baixar('Flash')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <h3>VLC Media Player</h3>
+                    <p class="category">Reprodutor de Vídeo</p>
+                    <p class="description">28 MB | Versão 1.1</p>
+                    <button class="btn-download" onclick="baixar('VLC')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <h3>Winamp 5.6</h3>
+                    <p class="category">Reprodutor de Áudio</p>
+                    <p class="description">8.4 MB | Clássico!</p>
+                    <button class="btn-download" onclick="baixar('Winamp')">BAIXAR</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">💾 GRAVAÇÃO DE MÍDIA</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Nero Burning</h3>
+                    <p class="category">Gravador CD/DVD</p>
+                    <p class="description">85 MB | Suite Completa</p>
+                    <button class="btn-download" onclick="baixar('Nero')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <h3>ImgBurn</h3>
+                    <p class="category">Ferramenta de Imagem</p>
+                    <p class="description">3.2 MB | Lightweight</p>
+                    <button class="btn-download" onclick="baixar('ImgBurn')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <h3>CDBurnerXP</h3>
+                    <p class="category">Gravador Gratuito</p>
+                    <p class="description">12 MB | Free & Open</p>
+                    <button class="btn-download" onclick="baixar('CDBurner')">BAIXAR</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🔧 UTILITÁRIOS SISTEMA</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>CCleaner</h3>
+                    <p class="category">Limpeza do PC</p>
+                    <p class="description">6.5 MB | Otimização</p>
+                    <button class="btn-download" onclick="baixar('CCleaner')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <h3>Defraggler</h3>
+                    <p class="category">Desfragmentador</p>
+                    <p class="description">9.2 MB | Performance</p>
+                    <button class="btn-download" onclick="baixar('Defraggler')">BAIXAR</button>
+                </div>
+                <div class="card">
+                    <h3>Process Lasso</h3>
+                    <p class="category">Gerenciador Processos</p>
+                    <p class="description">7.8 MB | Avançado</p>
+                    <button class="btn-download" onclick="baixar('Lasso')">BAIXAR</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2010 RetroDownloads. Todos os direitos reservados.</p>
+            <p>⭐ Visitantes: <span class="counter">12.847.392</span></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
